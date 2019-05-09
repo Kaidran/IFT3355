@@ -1,0 +1,15 @@
+material type=lambert name=matLambertRed albedo=(1.0,0.0,0.0)
+material type=lambert name=matLambertGreen albedo=(0.0,1.0,0.0)
+material type=lambert name=matLambertBlue albedo=(0.0,0.0,1.0)
+material type=lambert name=matLambertGrey albedo=(0.5,0.5,0.5)
+
+geometry type=sphere transform=tr(-2.5,1,-2) material=matLambertRed
+geometry type=sphere transform=tr(0,2,-2) material=matLambertGreen
+geometry type=sphere transform=tr(2.5,3,-2) material=matLambertBlue
+geometry type=plane transform=tr(0,0,0) material=matLambertGrey
+
+light type=point color=(50,50,50) shadows=true position=(0,8,2)
+
+camera eye=(0,3,9) lookAt=(0,-0.1,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.3,0.3,0.7) maxRecursionLevel=1
+output imageSize=(1024,512)

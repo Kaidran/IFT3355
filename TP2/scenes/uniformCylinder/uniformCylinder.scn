@@ -1,0 +1,7 @@
+material type=uniform name=matUniform color=(1.0,0.0,0.0)
+
+geometry type=cylinder material=matUniform
+
+camera eye=(0,0,2.5) lookAt=(0,0,-1) up=(0,1,0) fov=90 imageDist=1
+scene backgroundColor=(0.5,0.5,0.5) maxRecursionLevel=1
+output imageSize=(256,256)

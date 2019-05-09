@@ -1,0 +1,17 @@
+material type=phong name=matRed diffuseAlbedo=(1.0,0.0,0.0) specularAlbedo=(0.5,0.5,0.5) ambientColor=(0.1,0,0) shininess=500
+material type=phong name=matGreen diffuseAlbedo=(0.0,1.0,0.0) specularAlbedo=(0.5,0.5,0.5) ambientColor=(0,0.1,0) shininess=500
+material type=phong name=matBlue diffuseAlbedo=(0.0,0.0,1.0) specularAlbedo=(0.5,0.5,0.5) ambientColor=(0,0,0.1) shininess=500
+material type=phong name=matPurple diffuseAlbedo=(0.6,0.2,0.9) specularAlbedo=(0.5,0.5,0.5) ambientColor=(0.06,0.02,0.09) shininess=500
+
+geometry type=sphere transform=tr(0,0,-2)*sc(2,2,2) material=matRed
+geometry type=cube transform=tr(3,3,-1)*ro(x,45)*ro(y,30) material=matGreen
+geometry type=cylinder transform=tr(-2,3.5,0.5)*ro(x,-30) material=matBlue
+geometry type=cone transform=tr(-0.5,4.5,2)*ro(y,30)*ro(z,90)*tr(0,-0.5,0)*sc(1,0.5,1) material=matPurple
+geometry type=plane transform=tr(0,0,0) material=matPurple
+
+light type=directional color=(1,1,1) shadows=true direction=(0.5,-0.5,-1)
+light type=point color=(15,15,15) shadows=true position=(3,8,-1)
+
+camera eye=(0,4,15) lookAt=(0,-0.1,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.3,0.3,0.7) maxRecursionLevel=1
+output imageSize=(1024,512)

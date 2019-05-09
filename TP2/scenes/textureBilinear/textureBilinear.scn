@@ -1,0 +1,14 @@
+texture type=image name=texNot filename=candiesSmall.png bilinear=false
+texture type=image name=texBilin filename=candiesSmall.png bilinear=true
+
+material type=lambertTextured name=matNot texture=texNot
+material type=lambertTextured name=matBilin texture=texBilin
+
+geometry type=sphere transform=tr(-1.5,0,-2)*ro(x,45)*ro(y,45) material=matNot
+geometry type=sphere transform=tr(1.5,0,-2)*ro(x,45)*ro(y,45) material=matBilin
+
+light type=directional color=(1.5,1.5,1.5) shadows=false direction=(0,0,-1)
+
+camera eye=(0,0,10) lookAt=(0,0,-1) up=(0,1,0) fov=30 imageDist=1
+scene backgroundColor=(0.5,0.5,0.5) maxRecursionLevel=1
+output imageSize=(1024,512)

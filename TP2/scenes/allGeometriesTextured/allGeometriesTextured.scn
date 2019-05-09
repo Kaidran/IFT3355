@@ -1,0 +1,23 @@
+texture type=image name=tex filename=uv_test.png
+
+material type=lambertTextured name=mat texture=tex
+
+geometry type=sphere transform=tr(-1.5,-4.5,-2)*ro(x,45)*ro(y,45) material=mat
+geometry type=sphere transform=tr(1.5,-4.5,-2)*ro(x,-45)*ro(y,135) material=mat
+
+geometry type=cube transform=tr(-1.5,-1.5,-2)*ro(x,45)*ro(y,45) material=mat
+geometry type=cube transform=tr(1.5,-1.5,-2)*ro(x,-45)*ro(y,135) material=mat
+
+geometry type=cylinder transform=tr(-1.5,1.5,-2)*ro(x,45)*ro(y,45) material=mat
+geometry type=cylinder transform=tr(1.5,1.5,-2)*ro(x,-45)*ro(y,135) material=mat
+
+geometry type=cone transform=tr(-1.5,4.5,-2)*ro(x,45)*ro(y,45) material=mat
+geometry type=cone transform=tr(1.5,4.5,-2)*ro(x,-45)*ro(y,135) material=mat
+
+geometry type=plane transform=tr(0,-6,0)*ro(x,30)*sc(4,4,4) material=mat
+
+light type=directional color=(1.5,1.5,1.5) shadows=false direction=(0,0,-1)
+
+camera eye=(0,-0.5,10) lookAt=(0,0,-1) up=(0,1,0) fov=30 imageDist=1
+scene backgroundColor=(0.5,0.5,0.5) maxRecursionLevel=1
+output imageSize=(1024,2048)

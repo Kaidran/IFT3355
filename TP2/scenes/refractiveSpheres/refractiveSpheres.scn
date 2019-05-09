@@ -1,0 +1,20 @@
+texture type=checkerboard name=texChecker nbSquaresX=2 nbSquaresY=2 color1=(1,1,1) color2=(0,0,0)
+
+material type=lambertTextured name=matCheckerboard texture=texChecker
+material type=refractive name=matRefractive1 refractiveness=0.9 ambientColor=(1,0,0) refractiveIndex=1.33
+material type=refractive name=matRefractive2 refractiveness=0.9 ambientColor=(0,1,0) refractiveIndex=1.33
+material type=refractive name=matRefractive3 refractiveness=0.9 ambientColor=(0,0,1) refractiveIndex=1.33
+material type=reflective name=matReflective reflectiveness=0.75 ambientColor=(1,1,1)
+
+geometry type=plane transform=sc(4,4,4) material=matCheckerboard
+geometry type=sphere transform=tr(-2.4,2,0) material=matRefractive1
+geometry type=sphere transform=tr(0,2,-2) material=matRefractive2
+geometry type=sphere transform=tr(2.4,2,0) material=matRefractive3
+geometry type=plane transform=tr(0,0,-5)*ro(x,90) material=matReflective
+
+light type=directional color=(2,2,2) shadows=false direction=(0.5,-1,-1)
+
+camera eye=(0,6,11) lookAt=(0,-0.3,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.3,0.3,0.5) maxRecursionLevel=10
+#output imageSize=(1024,512)
+output imageSize=(4096,2048)

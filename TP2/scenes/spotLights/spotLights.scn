@@ -1,0 +1,14 @@
+material type=lambert name=matLambert albedo=(1.0,1.0,1.0)
+
+geometry type=sphere transform=tr(-2,0,-2)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=sphere transform=tr(0,0,-2)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=sphere transform=tr(2,0,-2)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=plane transform=tr(0,-1,0) material=matLambert
+
+light type=spot color=(15,15,15) shadows=true position=(-2,4,-2) direction=(0,-1,0) maxAngle=15 falloffExponent=0.5
+light type=spot color=(15,15,15) shadows=true position=(0,4,-2) direction=(0,-1,0) maxAngle=15 falloffExponent=1
+light type=spot color=(15,15,15) shadows=true position=(2,4,-2) direction=(0,-1,0) maxAngle=15 falloffExponent=2
+
+camera eye=(0,2,6) lookAt=(0,-0.3,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.5,0.5,0.5) maxRecursionLevel=1
+output imageSize=(1024,512)

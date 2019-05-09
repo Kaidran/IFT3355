@@ -1,0 +1,13 @@
+material type=lambert name=matLambert albedo=(1.0,0.0,1.0)
+
+geometry type=sphere transform=tr(-2,0,-2)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=sphere transform=tr(-1,0,-3)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=sphere transform=tr(0,0,-4)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=sphere transform=tr(1,0,-5)*sc(0.5,0.5,0.5) material=matLambert
+geometry type=sphere transform=tr(2,0,-6)*sc(0.5,0.5,0.5) material=matLambert
+
+light type=point color=(20,20,20) shadows=false position=(-2,0,3)
+
+camera eye=(3.5,0,4) lookAt=(-0.5,0,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.5,0.5,0.5) maxRecursionLevel=1
+output imageSize=(1024,512)

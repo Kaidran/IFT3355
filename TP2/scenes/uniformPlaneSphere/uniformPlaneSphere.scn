@@ -1,0 +1,9 @@
+material type=uniform name=matUniform color=(1.0,0.0,0.0)
+material type=uniform name=matUniform2 color=(0.0,0.0,1.0)
+
+geometry type=sphere material=matUniform
+geometry type=plane material=matUniform2
+
+camera eye=(0,2,0) lookAt=(0,-1,0) up=(1,0,0) fov=90 imageDist=1
+scene backgroundColor=(0,0,0) maxRecursionLevel=1
+output imageSize=(256,256)

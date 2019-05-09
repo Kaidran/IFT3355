@@ -1,0 +1,11 @@
+texture type=checkerboard name=texChecker nbSquaresX=2 nbSquaresY=2 color1=(1,1,1) color2=(0,0,0)
+
+material type=lambertTextured name=matCheckerboard texture=texChecker
+
+geometry type=plane transform=tr(0,0,0) material=matCheckerboard
+
+light type=directional color=(2,2,2) shadows=false direction=(0.5,-1,-1)
+
+camera eye=(0,2,6) lookAt=(0,-0.1,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.3,0.3,0.5) maxRecursionLevel=1 supersampleLevel=5 jittered=false
+output imageSize=(512,512)

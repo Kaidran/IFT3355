@@ -1,0 +1,27 @@
+﻿  texture.cpp
+c:\users\andyu\desktop\semaine_relache\tp2_code\src\texture.cpp(28): warning C4244: 'argument': conversion from 'valType' to 'unsigned int', possible loss of data
+          with
+          [
+              valType=double
+          ]
+c:\users\andyu\desktop\semaine_relache\tp2_code\src\texture.cpp(29): warning C4244: 'argument': conversion from 'valType' to 'unsigned int', possible loss of data
+          with
+          [
+              valType=double
+          ]
+c:\users\andyu\desktop\semaine_relache\tp2_code\src\texture.cpp(30): warning C4244: 'argument': conversion from 'valType' to 'unsigned int', possible loss of data
+          with
+          [
+              valType=double
+          ]
+c:\users\andyu\desktop\semaine_relache\tp2_code\src\texture.cpp(31): warning C4244: 'argument': conversion from 'valType' to 'unsigned int', possible loss of data
+          with
+          [
+              valType=double
+          ]
+c:\users\andyu\desktop\semaine_relache\tp2_code\src\texture.cpp(41): warning C4244: 'argument': conversion from 'valType' to 'unsigned int', possible loss of data
+          with
+          [
+              valType=double
+          ]
+  tp2.vcxproj -> C:\Users\AndyU\Desktop\semaine_relache\TP2_code\debug\tp2.exe

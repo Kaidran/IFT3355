@@ -1,0 +1,17 @@
+material type=phong name=mat1 diffuseAlbedo=(1,0,0) specularAlbedo=(1,1,1) ambientColor=(0.1,0,0) shininess=3;
+material type=phong name=mat2 diffuseAlbedo=(1,0,0) specularAlbedo=(1,1,1) ambientColor=(0.1,0,0) shininess=15;
+material type=phong name=mat3 diffuseAlbedo=(1,0,0) specularAlbedo=(1,1,1) ambientColor=(0.1,0,0) shininess=75;
+material type=phong name=mat4 diffuseAlbedo=(1,0,0) specularAlbedo=(1,1,1) ambientColor=(0.1,0,0) shininess=375;
+material type=phong name=mat5 diffuseAlbedo=(1,0,0) specularAlbedo=(1,1,1) ambientColor=(0.1,0,0) shininess=1875;
+
+geometry type=sphere transform=tr(-2.5,0,-2)*sc(0.5,0.5,0.5) material=mat1
+geometry type=sphere transform=tr(-1.25,0,-2)*sc(0.5,0.5,0.5) material=mat2
+geometry type=sphere transform=tr(0,0,-2)*sc(0.5,0.5,0.5) material=mat3
+geometry type=sphere transform=tr(1.25,0,-2)*sc(0.5,0.5,0.5) material=mat4
+geometry type=sphere transform=tr(2.5,0,-2)*sc(0.5,0.5,0.5) material=mat5
+
+light type=point color=(200,200,200) shadows=false position=(-10,10,10)
+
+camera eye=(0,0,6) lookAt=(0,0,-1) up=(0,1,0) fov=45 imageDist=1
+scene backgroundColor=(0.5,0.5,0.5) maxRecursionLevel=1
+output imageSize=(1024,256)

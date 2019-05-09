@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\lodepng\lodepng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sceneLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\basicStructures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\lodepng\lodepng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sceneLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
